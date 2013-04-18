@@ -1,0 +1,108 @@
+% \documentclass[10pt,a4paper]{moderncv}                
+%\usepackage[utf8]{inputenc}
+% \usepackage[scale=0.85]{geometry}
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage[T1]{fontenc}      % Activer toutes les toucher du clavier
+\usepackage[francais]{babel}  % Langue Français
+
+% moderncv themes
+%\moderncvtheme[orange]{casual}         
+\moderncvtheme[blue]{classic}        
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=false}
+
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\usepackage{ifpdf}
+\ifpdf
+	\pdfinfo {
+		/Author (Nicolas REY)
+		/Title (Nicolas REY - Demande de stage, de fin d'études, en Scala)
+		/Subject (SUBJECT)
+		/Keywords (KEYWORDS)
+		/CreationDate (D:20110109220854)
+	}
+\fi
+
+\addtolength{\oddsidemargin}{10pt}
+\addtolength{\textwidth}{0pt}
+\addtolength{\topmargin}{-05pt}
+\addtolength{\textheight}{10pt}
+\addtolength{\marginparsep}{0pt}
+\addtolength{\marginparwidth}{0pt}
+
+
+\firstname{Nicolas}
+\familyname{Rey}
+\title{ }
+\address{76 rue de l'Ouest}{75014 Paris}
+\mobile{+33 6 87 05 60 19}
+\email{contact@lateral-thoughts.com}
+\extrainfo{@Le\_3K}
+
+\nopagenumbers{}	% uncomment to suppress automatic page numbering for CVs longer than one page
+
+\begin{document}
+\maketitle
+
+\section{Diplômes et Études}
+\cventry{2008 - 2012}{École Centrale de Nantes}{École d'ingénieur généraliste}{}{}{Option Informatique / Entreprendre}
+\cventry{2005 - 2008}{Classe préparatoire aux grandes écoles}{Filière Physique Technologie}{Grenoble}{France}{}
+
+\section{Expériences}
+% \cventry{}{}{}{}{}{}
+\cventry{Déc. 2012 - Mai 2013\\6 mois}{Développement d'un système de notification en client lourd}{Vidal}{Paris}{}{
+	Scala, Akka, SWT, Javascript, HTML/CSS.\\
+	Méthodes AGILE : SCRUM.
+}
+\cventry{Nov. 2012\\1 mois}{Développement d'APIs REST HATEOAS}{Vidal}{Paris}{}{
+	Java, Spring, Hibernate, protocole ATOM. TDD avec JUnit, Mockito.\\
+	Méthodes AGILE : SCRUM.
+}
+\cventry{Avril - Sept. 2012\\6 mois}{Stage de fin d'études - Développement Web/Mobile}{Eklaweb}{Nantes}{}{
+  Développement d'applications mobiles HTML5 avec Backbone.js.\\
+  Serveur : Scala, Unfiltered, Play2!, MongoDB, PostgreSQL.\\
+  Articles sur le blog technique d'Eklaweb : "Gestion des dates en informatique".
+}
+\cventry{2011 - 2012}{Projets d'école}{}{Nantes}{France}{Java, Conception de bases de données, Programmation parallèle.}
+
+\cventry{Mai à août 2011\\4 mois}{Stage ingénieur en développement mobile}{Amadeus}{Bangalore}{Inde}{
+  Application iPad pour valider la maturité du développement mobile HTML5.\\
+  Utilisation importante de JavaScript (jQuery), PhoneGap, HTML5, CSS3 et SQLite.\\
+  Web scraping d'un site avec un script Python.
+}
+\cventry{Février à avril 2011}{Application Android de simulation mécanique}{Institut de recherche en Génie Mécanique}{Nantes}{}{Hautes performances nécessaires. Java, OpenGL ES, Bibliothèque de calcul matriciel (EJML).}
+%\cventry{}{}{}{}{}{}
+
+\section{Compétences en informatique}
+\cvcomputer{Langages}{Scala, Java, JavaScript}{SGBD}{PostgreSQL, MongoDB}
+\cvcomputer{Frontend}{Backbone.js}{Backend}{Play2!, Spring}
+\cvcomputer{Dév. Web}{HTML5/CSS3, API RESTful, Unfiltered, Play2!}{Mobile}{PhoneGap}
+\cvcomputer{OS}{GNU/Linux : Ubuntu, Fedora}{Outils}{Git, Maven/SBT, TDD, \LaTeX, UML}
+
+\section{Langues}
+\cvlanguage{Anglais}{Courant (ToEIC : 885)}{Travail en Anglais, 4 mois de stage en Inde, 6 séjours en Afrique du Sud}
+\cvlanguage{Espagnol}{Notions}{}
+
+%\subsection{Divers}
+%\cvline{}{Permis de conduire, Brevet de pilote UML 3 axes.}
+
+\section{Engagement associatif}
+\cvline{2009 - 2010}{Trésorier du Club de dégustation de bières.}
+\cvline{Mars 2009}{Vice-président d'une liste aux élections du Bureau Des Sports de l'ECN.}
+
+\section{Centres d'intérêt}
+\cvline{Loisirs}{Veille technologique, bières, course à pied.}
+\cvline{Voyages}{17 ans à Libreville (Gabon), Road trips en Europe (10 pays), 4 mois en Inde.}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
