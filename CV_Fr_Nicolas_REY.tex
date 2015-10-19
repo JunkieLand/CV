@@ -3,8 +3,8 @@
 % \usepackage[scale=0.85]{geometry}
 \documentclass[11pt,a4paper]{moderncv}
 
-\usepackage[T1]{fontenc}      % Activer toutes les toucher du clavier
-\usepackage[francais]{babel}  % Langue Français
+%\usepackage[T1]{fontenc}      % Activer toutes les toucher du clavier
+%\usepackage[francais]{babel}  % Langue Français
 
 % moderncv themes
 %\moderncvtheme[orange]{casual}         
@@ -14,96 +14,184 @@
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 %
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[top=1.5cm, bottom=1cm, left=1.5cm, right=1.5cm]{geometry}
 %\usepackage{hyperref}
 %\hypersetup{colorlinks=false}
 
-\recomputelengths                             % required when changes are made to page layout lengths
+%\recomputelengths                             % required when changes are made to page layout lengths
 
 \usepackage{ifpdf}
 \ifpdf
 	\pdfinfo {
 		/Author (Nicolas REY)
-		/Title (Nicolas REY - Demande de stage, de fin d'études, en Scala)
+		/Title (Nicolas REY - Développeur Backend / Frontend)
 		/Subject (SUBJECT)
 		/Keywords (KEYWORDS)
-		/CreationDate (D:20110109220854)
+%		/CreationDate (D:20110109220854)
 	}
 \fi
 
-\addtolength{\oddsidemargin}{10pt}
-\addtolength{\textwidth}{0pt}
-\addtolength{\topmargin}{-05pt}
-\addtolength{\textheight}{10pt}
-\addtolength{\marginparsep}{0pt}
-\addtolength{\marginparwidth}{0pt}
+%\addtolength{\oddsidemargin}{10pt}
+%\addtolength{\textwidth}{0pt}
+%\addtolength{\topmargin}{-05pt}
+%\addtolength{\textheight}{10pt}
+%\addtolength{\marginparsep}{0pt}
+%\addtolength{\marginparwidth}{0pt}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\nopagenumbers{}	% uncomment to suppress automatic page numbering for CVs longer than one page
 
 
 \firstname{Nicolas}
 \familyname{Rey}
-% \title{}
+\title{Développeur backend/frontend}
 \address{76 rue de l'Ouest}{75014 Paris}
-\mobile{+33 6 87 05 60 19}
+\mobile{+33 6 26 09 05 07}
 \email{contact@lateral-thoughts.com}
-\extrainfo{@Le\_3K}
+\extrainfo{28 ans, Célibataire, Permis B, Pilote UML 3 axes}
 
-\nopagenumbers{}	% uncomment to suppress automatic page numbering for CVs longer than one page
 
 \begin{document}
 \maketitle
 
-\section{Diplômes et Études}
+\vspace{1cm}
+\section{Formations}
+\cventry{Sept. 2014}{Formation Spark Core, Spark SQL, Spark Streaming}{Lateral Thoughts}{}{Paris}{France}
 \cventry{2008 - 2012}{École Centrale de Nantes}{École d'ingénieur généraliste}{}{}{Option Informatique / Entreprendre}
-\cventry{2005 - 2008}{Classe préparatoire aux grandes écoles}{Filière Physique Technologie}{Grenoble}{France}{}
 
-\section{Expériences}
-% \cventry{}{}{}{}{}{}
-\cventry{Mai 2013 - Déc. 2013\\6.5 mois}{Développement d'une web app de co-création de polices}{FONTYOU}{Paris}{}{
-	Scala, Play2!, MongoDB, Javascript, RequireJS, BackboneJS, MarionetteJS, HTML5/CSS3, LessCSS.\\
-	Méthodes AGILE : SCRUM.
-}
-\cventry{Déc. 2012 - Mai 2013\\6.5 mois}{Développement d'un système de notification en client lourd}{Vidal}{Paris}{}{
-	Scala, Akka, SWT, Javascript, HTML/CSS.\\
-	Méthodes AGILE : SCRUM.
-}
-\cventry{Nov. 2012\\1 mois}{Développement d'APIs REST HATEOAS}{Vidal}{Paris}{}{
-	Java, Spring, Hibernate, protocole ATOM. TDD avec JUnit, Mockito.\\
-	Méthodes AGILE : SCRUM.
-}
-\cventry{Avril - Sept. 2012\\6 mois}{Stage de fin d'études - Développement Web/Mobile}{Eklaweb}{Nantes}{}{
-  Développement d'applications mobiles HTML5 avec Backbone.js.\\
-  Serveur : Scala, Unfiltered, Play2!, MongoDB, PostgreSQL.\\
-  Article sur le blog technique d'Eklaweb : "Gestion des dates en informatique".
-}
-% \cventry{2011 - 2012}{Projets d'école}{}{Nantes}{France}{Java, Conception de bases de données, Programmation parallèle.}
-
-\cventry{Mai à août 2011\\4 mois}{Stage ingénieur en développement mobile}{Amadeus}{Bangalore}{Inde}{
-  Application iPad pour valider la maturité du développement mobile HTML5.\\
-  Utilisation importante de JavaScript (jQuery), PhoneGap, HTML5, CSS3 et SQLite.\\
-  Web scraping d'un site avec un script Python.
-}
-\cventry{Février à avril 2011}{Application Android de simulation mécanique}{Institut de recherche en Génie Mécanique}{Nantes}{}{Hautes performances nécessaires. Java, OpenGL ES, Bibliothèque de calcul matriciel (EJML).}
-%\cventry{}{}{}{}{}{}
-
-\section{Compétences en informatique}
-\cvcomputer{Langages}{Scala, Java, JavaScript}{SGBD}{PostgreSQL, MongoDB}
-\cvcomputer{Frontend}{RequireJS, Backbone/MarionetteJS, Less}{Backend}{Play2!, Spring, Unfiltered}
-\cvcomputer{Dév. Web}{HTML5/CSS3, API RESTful}{Mobile}{PhoneGap}
-\cvcomputer{OS}{GNU/Linux : Debian, Fedora, ArchLinux}{Outils}{Git, Maven/SBT, TDD, \LaTeX, UML}
-
+\vspace{0.5cm}
 \section{Langues}
 \cvlanguage{Anglais}{Courant (ToEIC : 885)}{Travail en Anglais, 4 mois de stage en Inde, 6 séjours en Afrique du Sud}
 \cvlanguage{Espagnol}{Notions}{}
 
-%\subsection{Divers}
-%\cvline{}{Permis de conduire, Brevet de pilote UML 3 axes.}
+\vspace{0.5cm}
+\section{Informatique}
+\begin{tabular}{ll}
+  \vspace{0.1cm}
+  \hspace{0.1cm} Langages & \hspace{0.5cm} \textbf{Scala}, Java, Javascript \\ \vspace{0.1cm}
+  \hspace{0.1cm} Ecosystème Scala & \hspace{0.5cm} Play 2!, Spark, Akka \\ \vspace{0.1cm}
+  \hspace{0.1cm} Ecosystème Java & \hspace{0.5cm} Spring (MVC, Core), Jersey \\ \vspace{0.1cm}
+  \hspace{0.1cm} Ecosystème Javascript/Web & \hspace{0.5cm} ReactJS, BackboneJS, RequireJS, Browserify, Bootstrap, HTML5/CSS3 \\ \vspace{0.1cm}
+  \hspace{0.1cm} Environnement de Test & \hspace{0.5cm} Scalatest, Junit, Mockito, Cucumber \\ \vspace{0.1cm}
+  \hspace{0.1cm} Intégration & \hspace{0.5cm} SBT, Maven, Jenkins, Git, Github \\ \vspace{0.1cm}
+  \hspace{0.1cm} Bases de Données & \hspace{0.5cm} SQL, MongoDB \\ \vspace{0.1cm}
+  \hspace{0.1cm} Administration & \hspace{0.5cm} GNU/Linux, Ansible, Vagrant, Docker \\ \vspace{0.1cm}
+  \hspace{0.1cm} Documents & \hspace{0.5cm} \LaTeX, Beamer \\ \vspace{0.1cm}
+\end{tabular}
+
+
+
+\newpage
+\section{Expériences}
+% \cventry{}{}{}{}{}{}
+\cventry{2014 - 2015\\1 an}{Ingénieur Développeur Java}{Vidal}{Paris}{}{
+	\small Développement d'APIs REST HATEOAS
+	\medskip
+  \begin{itemize}
+    \item Exposition et implémentation des régles métier sur des données médicales
+    \item Développement d'un projet de tests BDD Cucumber sur les APIs Vidal
+  \end{itemize}
+  \medskip
+  \textbf{Environnement :} \textit{Java, Guava, Spring, Hibernate, Cucumber, Github, Docker, Ansible, Vagrant} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum} \\
+  \\
+	\small Développement d'un outil de pilotage de mises à jour
+	\medskip
+  \begin{itemize}
+    \item Gestion du téléchargement et de l'installation des mises à jour d'APIs chez les clients
+    \item Pings de notifications de l'état d'avancement
+  \end{itemize}
+  \medskip
+  \textbf{Environnement :} \textit{\textbf{Scala}, Akka, Github}
+  \bigskip
+}
+\cventry{2014}{Ingénieur Développeur Scala}{Projet personnel}{Paris}{}{
+	\small Développement du site web d'un hôtel/restaurant de Libreville (Gabon)
+	\medskip
+  \begin{itemize}
+    \item Développement backend et frontend, et intégration du design
+    \item Sémentisation du site avec des microdata.
+    \item Administration du serveur
+  \end{itemize}
+  \medskip
+  \textbf{Environnement :} \textit{\textbf{Scala}, Play2!, MongoDB, Javascript, Bootstrap} \\
+  \textbf{Site :} \textit{\href{www.garden-caffe.com}{www.garden-caffe.com}}
+  \bigskip
+}
+\cventry{2014\\9 mois}{Ingénieur Développeur Java}{SACEM}{Paris}{}{
+	\small Refonte des sites de déclaration, de paiement, et institutionnels
+	\medskip
+  \begin{itemize}
+    \item Développement backend et frontend
+    \item Développement d'un tampon avec RabbitMQ masquant l'indisponibilité du SI interne
+  \end{itemize}
+  \medskip
+  \textbf{Environnement Backend :} \textit{Java, Guava, Spring Core, Spring MVC, Fluentlenium} \\
+  \textbf{Environnement Frontend :} \textit{Javascript, ReactJS, Browserify, Gulp} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum}
+  \bigskip
+}
+\cventry{2013\\6.5 mois}{Ingénieur Développeur Scala}{FONTYOU}{Paris}{}{
+	\small Développement d'une web app de co-création de polices pour une satrtup
+	\medskip
+  \begin{itemize}
+    \item Très polyvalent car seulement deux développeurs pour tout faire
+    \item Développement du serveur
+    \item Développement du frontend navigateur, intégration HTML5/CSS3
+    \item Administration système, gestion de l'usine logicielle et de la prod
+    \item Développement d'un POC d'un logiciel de dessin vectoriel dans le navigateur
+  \end{itemize}
+  \medskip
+  \textbf{Environnement Backend :} \textit{\textbf{Scala}, Play2!, MongoDB, Zabbix} \\
+  \textbf{Environnement Frontend :} \textit{Javascript, BackboneJS, RequireJS, HTML5/CSS3, LessCSS} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum}
+  \bigskip
+}
+\cventry{2012 - 2013\\6.5 mois}{Ingénieur Développeur Scala}{Vidal}{Paris}{}{
+	\small Développement d'un client lourd
+	\medskip
+  \begin{itemize}
+    \item Développement d'un système de notification installé chez les clients
+    \item Gestion de l'expiration et du renouvellement de la license des clients
+  \end{itemize}
+  \medskip
+  \textbf{Environnement :} \textit{\textbf{Scala}, Akka, SWT, Javascript, HTML/CSS} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum}
+  \bigskip
+}
+% \cventry{Nov. 2012\\1 mois}{Développement d'APIs REST HATEOAS}{Vidal}{Paris}{}{
+% 	Java, Spring, Hibernate, protocole ATOM. TDD avec JUnit, Mockito.\\
+% 	Méthodes AGILE : SCRUM.
+% }
+% \cventry{Avril - Sept. 2012\\6 mois}{Stage de fin d'études - Développement Web/Mobile}{Eklaweb}{Nantes}{}{
+%   Développement d'applications mobiles HTML5 avec Backbone.js.\\
+%   Serveur : Scala, Unfiltered, Play2!, MongoDB, PostgreSQL.\\
+%   Article sur le blog technique d'Eklaweb : "Gestion des dates en informatique".
+% }
+% \cventry{Mai à août 2011\\4 mois}{Stage ingénieur en développement mobile}{Amadeus}{Bangalore}{Inde}{
+%   Application iPad pour valider la maturité du développement mobile HTML5.\\
+%   Utilisation importante de JavaScript (jQuery), PhoneGap, HTML5, CSS3 et SQLite.\\
+%   Web scraping d'un site avec un script Python.
+% }
+% \cventry{Février à avril 2011}{Application Android de simulation mécanique}{Institut de recherche en Génie Mécanique}{Nantes}{}{Hautes performances nécessaires. Java, OpenGL ES, Bibliothèque de calcul matriciel (EJML).}
+%\cventry{}{}{}{}{}{}
+
+
+\newpage
+\section{Projets personnels}
+\cventry{2015}{Serveur Personnel}{}{}{\small Installation d'un serveur avec Ansible}{\textit{Ansible, Nginx, OwnCloud, GitLab, Linux Debian}}
+\cventry{2015}{Ordinateur Personnel}{}{}{\small Automatisation de l'installation et de la configuration de mes ordinateurs avec Ansible}{}
 
 \section{Engagement associatif}
 \cvline{2009 - 2010}{Trésorier du Club de dégustation de bières.}
 \cvline{Mars 2009}{Vice-président d'une liste aux élections du Bureau Des Sports de l'ECN.}
 
 \section{Centres d'intérêt}
-\cvline{Loisirs}{Veille technologique, bières, course à pied.}
+\cvline{Informatique}{Logiciels libres, programmation fonctionnelle}
+\cvline{Loisirs}{Salsa et autres danses latines, Veille technologique, Bières.}
 \cvline{Voyages}{17 ans à Libreville (Gabon), Road trips en Europe (10 pays), 4 mois en Inde.}
 
 \closesection{}                   % needed to renewcommands
