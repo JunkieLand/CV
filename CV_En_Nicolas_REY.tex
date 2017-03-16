@@ -1,0 +1,219 @@
+% \documentclass[10pt,a4paper]{moderncv}                
+%\usepackage[utf8]{inputenc}
+% \usepackage[scale=0.85]{geometry}
+\documentclass[11pt,a4paper]{moderncv}
+
+%\usepackage[T1]{fontenc}      % Activer toutes les toucher du clavier
+%\usepackage[francais]{babel}  % Langue Français
+
+% moderncv themes
+%\moderncvtheme[orange]{casual}         
+\moderncvtheme[blue]{classic}        
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+%
+% adjust the page margins
+\usepackage[top=1.5cm, bottom=1cm, left=1.5cm, right=1.5cm]{geometry}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=false}
+
+%\recomputelengths                             % required when changes are made to page layout lengths
+
+\usepackage{ifpdf}
+\ifpdf
+	\pdfinfo {
+		/Author (Nicolas REY)
+		/Title (Nicolas REY - Scala Developer - Big Data)
+		% /Subject (SUBJECT)
+		% /Keywords (KEYWORDS)
+%		/CreationDate (D:20110109220854)
+	}
+\fi
+
+%\addtolength{\oddsidemargin}{10pt}
+%\addtolength{\textwidth}{0pt}
+%\addtolength{\topmargin}{-05pt}
+%\addtolength{\textheight}{10pt}
+%\addtolength{\marginparsep}{0pt}
+%\addtolength{\marginparwidth}{0pt}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\nopagenumbers{}	% uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+\firstname{Nicolas}
+\familyname{Rey}
+\title{Scala Developer - Big Data}
+\address{76 rue de l'Ouest}{75014 Paris}
+\mobile{+33 6 26 09 05 07}
+\email{nicolas.rey.3k.pro@gmail.com}
+% \extrainfo{29 ans, Single, Permis voiture}
+
+
+\begin{document}
+\maketitle
+
+\vspace{1cm}
+\section{Education}
+\cventry{Sept. 2014}{Spark Training}{Lateral Thoughts}{}{Paris}{
+  \smallskip
+  \begin{itemize}
+    \item Spark Core
+    \item Spark SQL
+    \item Spark Streaming
+  \end{itemize}
+  \bigskip
+}
+\cventry{2008 - 2012}{École Centrale de Nantes}{Generalist engineering school}{}{}{Specialized in information technology}
+
+\vspace{0.5cm}
+\section{Languages}
+\cvlanguage{French}{Native}{}
+\cvlanguage{English}{Fluent (ToEIC : 885), working in English}{}
+\cvlanguage{Spainish}{Notions}{}
+\cvlanguage{Russian}{Notions}{}
+
+\vspace{0.5cm}
+\section{IT skills}
+\begin{tabular}{ll}
+  \vspace{0.1cm}
+  \hspace{0.1cm} Languages & \hspace{0.5cm} \textbf{Scala}, Java, JavaScript, Bash (basics) \\ \vspace{0.1cm}
+  \hspace{0.1cm} Big Data ecosystem & \hspace{0.5cm} Spark, Kafka, HDFS, Cloudera \\ \vspace{0.1cm}
+  \hspace{0.1cm} Scala ecosystem & \hspace{0.5cm} Play 2!, Akka (basics) \\ \vspace{0.1cm}
+  \hspace{0.1cm} Java ecosystem & \hspace{0.5cm} Spring (MVC, Core) \\ \vspace{0.1cm}
+  \hspace{0.1cm} Web ecosystem & \hspace{0.5cm} ReactJS, Bootstrap, HTML5/CSS3 \\ \vspace{0.1cm}
+  \hspace{0.1cm} Code management & \hspace{0.5cm} SBT, Maven, Jenkins, Git \\ \vspace{0.1cm}
+  \hspace{0.1cm} Data bases & \hspace{0.5cm} Cassandra, MongoDB \\ \vspace{0.1cm}
+  \hspace{0.1cm} System & \hspace{0.5cm} GNU/Linux, Ansible, Docker, Vagrant \\ \vspace{0.1cm}
+\end{tabular}
+
+
+
+\newpage
+\section{Experiences}
+% \cventry{}{}{}{}{}{}
+\cventry{2012 - 2016\\3,5 ans}{Software engineer Scala/Java}{Lateral Thoughts}{Paris}{}{
+  \small Development services \\
+  \textbf{Environment :} \textit{\textbf{Scala}, Java, \textbf{Spark}}
+  \bigskip
+}
+\cventry{2016 - 2017\\7 mois}{Software engineer Scala - Big Data}{Pages Jaunes}{Paris}{}{
+  \small Redesign the applications regarding audience data of Pages Jaunes with Spark
+  \medskip
+  \begin{itemize}
+    \item Development of several applications to ingest and valorize data
+    \item Building the software factory (Jenkins, Sonatype Nexus)
+    \item DevOps : managing the install (Ansible) and runtime of the app
+    \item Training the team to Scala, Spark, and Agile methods
+  \end{itemize}
+  \medskip
+  \textbf{Environment :} \textit{\textbf{Scala}, \textbf{Spark}, HDFS, Cloudera, Avro, Parquet} \\
+  \textbf{Project management :} \textit{Agile methods}
+  \bigskip
+}
+\cventry{2015 - 2016\\10 mois}{Software engineer Scala - Big Data - SMACK}{Carrefour}{Paris}{}{
+  \small Development of the big data platform of Carrefour, a major big distribution company
+  \medskip
+  \begin{itemize}
+    \item Développement of the real time data lake : data ingestion and enrichment
+    \item Développement of the API to access those data
+  \end{itemize}
+  \medskip
+  \textbf{Environment :} \textit{\textbf{Scala}, \textbf{Spark}, Mesos, Akka, Cassandra, Kafka, HDFS, Cloudera, Spray, Avro} \\
+}
+\cventry{2014 - 2015\\1 an}{Software engineer Scala/Java}{Vidal}{Paris}{}{
+	\small Développement d'APIs REST HATEOAS
+	\medskip
+  \begin{itemize}
+    \item Exposition et implémentation des régles métier sur des données médicales
+    \item Développement d'un projet de tests BDD Cucumber sur les APIs Vidal
+  \end{itemize}
+  \medskip
+  \textbf{Environment :} \textit{Java, Guava, Spring, Hibernate, Cucumber, Github, Docker, Ansible, Vagrant} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum} \\
+  \\
+	\small Développement d'un outil de pilotage de mises à jour d'un client lourd
+	\medskip
+  \begin{itemize}
+    \item Machine à état développée en Akka
+  \end{itemize}
+  \medskip
+  \textbf{Environment :} \textit{\textbf{Scala}, Akka, Github}
+  \bigskip
+}
+\cventry{2014\\9 mois}{Software engineer Java}{SACEM}{Paris}{}{
+	\small Refonte des sites de déclaration, de paiement, et institutionnels
+	\medskip
+  \begin{itemize}
+    \item Développement backend et frontend
+    \item Développement d'un tampon avec RabbitMQ masquant l'indisponibilité du SI interne
+  \end{itemize}
+  \medskip
+  \textbf{Environment Backend :} \textit{Java, Guava, Spring Core, Spring MVC, Fluentlenium} \\
+  \textbf{Environment Frontend :} \textit{JavaScript, ReactJS, Browserify, Gulp} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum}
+  \bigskip
+}
+\cventry{2013\\7 mois}{Software engineer Scala}{FONTYOU}{Paris}{}{
+	\small Développement d'une web app de co-création de polices pour une satrtup
+	\medskip
+  \begin{itemize}
+    \item Développement des API en Scala, Play2!, MongoDB
+    \item Développement du front en JavaScript / BackboneJS, intégration HTML5/CSS3
+    \item Administration système, gestion de l'usine logicielle et de la prod
+    \item Développement d'un POC d'un logiciel de dessin vectoriel dans le navigateur
+  \end{itemize}
+  \medskip
+  \textbf{Environment Backend :} \textit{\textbf{Scala}, Play2!, MongoDB, Zabbix} \\
+  \textbf{Environment Frontend :} \textit{JavaScript, BackboneJS, RequireJS, HTML5/CSS3, LessCSS} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum}
+  \bigskip
+}
+% \cventry{2012 - 2013\\7 mois}{Ingénieur Développeur Scala}{Vidal}{Paris}{}{
+% 	\small Développement d'un client lourd
+% 	\medskip
+%   \begin{itemize}
+%     \item Développement d'un système de notification installé chez les clients
+%     \item Gestion de l'expiration et du renouvellement de la license des clients
+%   \end{itemize}
+%   \medskip
+%   \textbf{Environnement :} \textit{\textbf{Scala}, Akka, SWT, JavaScript, HTML/CSS} \\
+%   \textbf{Gestion de projet :} \textit{Agile / Scrum}
+%   \bigskip
+% }
+% \cventry{Nov. 2012\\1 mois}{Développement d'APIs REST HATEOAS}{Vidal}{Paris}{}{
+% 	Java, Spring, Hibernate, protocole ATOM. TDD avec JUnit, Mockito.\\
+% 	Méthodes AGILE : SCRUM.
+% }
+% \cventry{Avril - Sept. 2012\\6 mois}{Stage de fin d'études - Développement Web/Mobile}{Eklaweb}{Nantes}{}{
+%   Développement d'applications mobiles HTML5 avec Backbone.js.\\
+%   Serveur : Scala, Unfiltered, Play2!, MongoDB, PostgreSQL.\\
+%   Article sur le blog technique d'Eklaweb : "Gestion des dates en informatique".
+% }
+% \cventry{Mai à août 2011\\4 mois}{Stage ingénieur en développement mobile}{Amadeus}{Bangalore}{Inde}{
+%   Application iPad pour valider la maturité du développement mobile HTML5.\\
+%   Utilisation importante de JavaScript (jQuery), PhoneGap, HTML5, CSS3 et SQLite.\\
+%   Web scraping d'un site avec un script Python.
+% }
+% \cventry{Février à avril 2011}{Application Android de simulation mécanique}{Institut de recherche en Génie Mécanique}{Nantes}{}{Hautes performances nécessaires. Java, OpenGL ES, Bibliothèque de calcul matriciel (EJML).}
+%\cventry{}{}{}{}{}{}
+
+
+\newpage
+\section{Projets personnels}
+\cventry{2015}{Serveur Personnel}{}{}{\small Installation d'un serveur avec Ansible}{\textit{Ansible, Nginx, OwnCloud, GitLab, Linux Debian}}
+\cventry{2015}{Ordinateur Personnel}{}{}{\small Automatisation de l'installation et de la configuration de mes ordinateurs avec Ansible}{}
+
+\section{Centres d'intérêt}
+\cvline{Informatique}{Logiciels libres, programmation fonctionnelle.}
+\cvline{Loisirs}{Salsa et autres danses, Veille technologique, photographie.}
+\cvline{Voyages}{17 ans à Libreville (Gabon), Road trips en Europe (10 pays), 4 mois en Inde.}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
