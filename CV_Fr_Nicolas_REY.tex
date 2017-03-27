@@ -51,7 +51,7 @@
 \address{76 rue de l'Ouest}{75014 Paris}
 \mobile{+33 6 26 09 05 07}
 \email{nicolas.rey.3k.pro@gmail.com}
-\extrainfo{29 ans, Célibataire, Permis B, Pilote ULM 3 axes}
+% \extrainfo{29 ans, Célibataire, Permis voiture}
 
 
 \begin{document}
@@ -59,11 +59,22 @@
 
 \vspace{1cm}
 \section{Formations}
-\cventry{Sept. 2014}{Formation Spark Core, Spark SQL, Spark Streaming}{Lateral Thoughts}{}{Paris}{France}
-\cventry{2008 - 2012}{École Centrale de Nantes}{École d'ingénieur généraliste}{}{}{Option Informatique / Entreprendre}
+\cventry{Sept. 2014}{Formation Apache Spark}{Lateral Thoughts}{}{Paris}{
+  \smallskip
+  \begin{itemize}
+    \item Spark Core
+    \item Spark SQL
+    \item Spark Streaming
+  \end{itemize}
+  \bigskip
+}
+\cventry{2008 - 2012}{École Centrale de Nantes - Option Informatique}{École d'ingénieur généraliste}{}{}{
+  L'École Centrale de Nantes est une école d'ingénieur reconnue par l'Ordre des ingénieurs du Québec. Le diplôme est équivalent à un \textit{Baccalauréat spécialisé de 4 ans} au Québec.
+}
 
 \vspace{0.5cm}
 \section{Langues}
+\cvlanguage{Français}{Langue maternelle}{}
 \cvlanguage{Anglais}{Courant (ToEIC : 885)}{Travail en Anglais, stage en Inde (4 mois), Afrique du Sud (6 séjours)}
 \cvlanguage{Espagnol}{Notions}{}
 \cvlanguage{Russe}{Notions}{}
@@ -73,7 +84,7 @@
 \begin{tabular}{ll}
   \vspace{0.1cm}
   \hspace{0.1cm} Langages & \hspace{0.5cm} \textbf{Scala}, Java, JavaScript, Bash (bases) \\ \vspace{0.1cm}
-  \hspace{0.1cm} Ecosystème Big Data & \hspace{0.5cm} Spark, Kafka, HDFS, Cloudera \\ \vspace{0.1cm}
+  \hspace{0.1cm} Ecosystème Big Data & \hspace{0.5cm} \textbf{Spark}, Kafka, HDFS, Cloudera Platform \\ \vspace{0.1cm}
   \hspace{0.1cm} Ecosystème Scala & \hspace{0.5cm} Play 2!, Akka (débutant) \\ \vspace{0.1cm}
   \hspace{0.1cm} Ecosystème Java & \hspace{0.5cm} Spring (MVC, Core) \\ \vspace{0.1cm}
   \hspace{0.1cm} Ecosystème Web & \hspace{0.5cm} ReactJS, Bootstrap, HTML5/CSS3 \\ \vspace{0.1cm}
@@ -87,8 +98,16 @@
 \newpage
 \section{Expériences}
 % \cventry{}{}{}{}{}{}
-\cventry{2012 - 2016\\3,5 ans}{Ingénieur Développeur Scala/Java}{Lateral Thoughts}{Paris}{}{
-  \small Prestations de développement \\
+\cventry{2012 - 2017\\4,5 ans}{Ingénieur Développeur Scala/Java}{Lateral Thoughts}{Paris}{}{
+  \small Prestations de développement
+  \medskip
+  \begin{itemize}
+    \item Société de services auto-organisée, sans chef ni hiérarchie
+    \item Gestion commune du fonctionnement et du développement de l'entreprise
+    \item Liberté totale pour ses employés
+    \item Fort sens des responsabilités
+  \end{itemize}
+  \medskip
   \textbf{Environnement :} \textit{\textbf{Scala}, Java, \textbf{Spark}}
   \bigskip
 }
@@ -98,59 +117,70 @@
   \begin{itemize}
     \item Développement de plusieurs applications d'ingestion et de valorisation de données
     \item Mise en place de l'usine logicielle (Jenkins, Sonatype Nexus)
-    \item DevOps : gestion de l'installation (Ansible), et du bon fonctionnement de l'appli
+    \item DevOps : gestion du déploiement (Ansible), et de l'exécution des pipelines d'applications
     \item Formation de l'équipe aux pratiques Agile, à Scala et à Spark
   \end{itemize}
   \medskip
   \textbf{Environnement :} \textit{\textbf{Scala}, \textbf{Spark}, HDFS, Cloudera, Avro, Parquet} \\
-  \textbf{Gestion de projet :} \textit{Agile}
+  \textbf{Gestion de projet :} \textit{Agile} \\
+  \textbf{Entreprise :} \textit{Moteur de recherche de professionnels. Env. 5 millions d'utilisateurs quotidiens.}
   \bigskip
 }
-\cventry{2015 - 2016\\10 mois}{Ingénieur Développeur Scala - Big Data - SMACK}{Carrefour}{Paris}{}{
-  \small Développement de la plateforme big data de Carrefour
+\cventry{2015 - 2016\\10 mois}{Ingénieur Développeur Scala - Big Data}{Carrefour}{Paris}{}{
+  \small Développement de la plateforme data lake temps réel de Carrefour (pour la région France)
   \medskip
   \begin{itemize}
-    \item Développement du data lake temps réel : ingestion et enrichissement des données
-    \item Développement des API d'accès à ces données
+    \item Ingestion dans Kafka de multiples sources de données
+    \item Traitement de la donnée avec Spark Streaming
+    \item Normalisation des données au format avro
+    \item Stockage des données dans HDFS et Cassandra 
+    \item Développement des API d'accès à ces données avec Spray
+    \item L'ensemble de la plate-forme est répartie entre un cluster Mesos et Cloudera
   \end{itemize}
   \medskip
   \textbf{Environnement :} \textit{\textbf{Scala}, \textbf{Spark}, Mesos, Akka, Cassandra, Kafka, HDFS, Cloudera, Spray, Avro} \\
+  \textbf{Entreprise :} \textit{Grande distribution. 5600 magasins en France.}
+  \bigskip
 }
 \cventry{2014 - 2015\\1 an}{Ingénieur Développeur Scala/Java}{Vidal}{Paris}{}{
 	\small Développement d'APIs REST HATEOAS
 	\medskip
   \begin{itemize}
-    \item Exposition et implémentation des régles métier sur des données médicales
-    \item Développement d'un projet de tests BDD Cucumber sur les APIs Vidal
+    \item Développement d'API sur une base de donnée de médicaments
+    \item Développement d'un projet de tests BDD Cucumber sur les API Vidal
   \end{itemize}
   \medskip
-  \textbf{Environnement :} \textit{Java, Guava, Spring, Hibernate, Cucumber, Github, Docker, Ansible, Vagrant} \\
-  \textbf{Gestion de projet :} \textit{Agile / Scrum} \\
+  \textbf{Environnement :} \textit{Java, Guava, Spring, Hibernate, Cucumber, Github, Docker} \\
   \\
-	\small Développement d'un outil de pilotage de mises à jour d'un client lourd
+	\small Développement d'un outil de gestion de mises à jour d'un client lourd
 	\medskip
   \begin{itemize}
-    \item Machine à état développée en Akka
+    \item Développement du cycle de mise à jour sous forme d'une machine à état fini développée en Akka
   \end{itemize}
   \medskip
-  \textbf{Environnement :} \textit{\textbf{Scala}, Akka, Github}
+  \textbf{Environnement :} \textit{\textbf{Scala}, Akka, Github} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum} \\
+  \textbf{Entreprise :} \textit{Éditeur d'une base de données de médicaments. Leader français de ce domaine.}
   \bigskip
 }
 \cventry{2014\\9 mois}{Ingénieur Développeur Java}{SACEM}{Paris}{}{
-	\small Refonte des sites de déclaration, de paiement, et institutionnels
+	\small Refonte de plusieurs portails de déclaration et de paiement
 	\medskip
   \begin{itemize}
-    \item Développement backend et frontend
-    \item Développement d'un tampon avec RabbitMQ masquant l'indisponibilité du SI interne
+    \item Développement backend en Java, Spring, et utilisation intensive de Guava
+    \item Développement frontend en JavaScript et ReactJS
+    \item Écriture de tests d'interfaces avec Fluentlenium
+    \item Conception d'un tampon avec RabbitMQ masquant l'indisponibilité du système d'information interne
   \end{itemize}
   \medskip
-  \textbf{Environnement Backend :} \textit{Java, Guava, Spring Core, Spring MVC, Fluentlenium} \\
-  \textbf{Environnement Frontend :} \textit{JavaScript, ReactJS, Browserify, Gulp} \\
-  \textbf{Gestion de projet :} \textit{Agile / Scrum}
+  \textbf{Environnement Backend :} \textit{Java, Guava, Spring, Fluentlenium} \\
+  \textbf{Environnement Frontend :} \textit{JavaScript, ReactJS} \\
+  \textbf{Gestion de projet :} \textit{Agile / Scrum} \\
+  \textbf{Entreprise :} \textit{Société de collecte et de redistribution des droits d'auteur sur la musique}
   \bigskip
 }
 \cventry{2013\\7 mois}{Ingénieur Développeur Scala}{FONTYOU}{Paris}{}{
-	\small Développement d'une web app de co-création de polices pour une satrtup
+	\small Développement d'une web app de co-création de polices pour une startup
 	\medskip
   \begin{itemize}
     \item Développement des API en Scala, Play2!, MongoDB
@@ -164,6 +194,7 @@
   \textbf{Gestion de projet :} \textit{Agile / Scrum}
   \bigskip
 }
+\cventry{}{Références sur demande}{}{}{}{}
 % \cventry{2012 - 2013\\7 mois}{Ingénieur Développeur Scala}{Vidal}{Paris}{}{
 % 	\small Développement d'un client lourd
 % 	\medskip
@@ -196,13 +227,25 @@
 
 \newpage
 \section{Projets personnels}
-\cventry{2015}{Serveur Personnel}{}{}{\small Installation d'un serveur avec Ansible}{\textit{Ansible, Nginx, OwnCloud, GitLab, Linux Debian}}
-\cventry{2015}{Ordinateur Personnel}{}{}{\small Automatisation de l'installation et de la configuration de mes ordinateurs avec Ansible}{}
+\cventry{2017}{HDFS Compactor}{En cours...}{}{}{
+  \small Outil visant à réunir des petits fichiers en un plus gros fichier afin de minimiser le nombre de blocs HDFS et d'optimiser la lecture. Format supportés : Parquet, Avro, CSV compressé en GZip.
+  \bigskip
+}
+\cventry{2017}{Image Docker pour Taiga}{En cours...}{}{}{
+  \small Création d'une image Docker pour le logiciel \textit{taiga.io}. Taiga est un outil simplifié de gestion de tâches orienté méthodes Agile.
+  \bigskip
+}
+\cventry{2015}{Serveur Personnel}{}{}{}{
+\small Installation d'un serveur de développement avec Ansible \\
+\textit{Ansible, Nginx, OwnCloud, GitLab, Linux Debian}
+\bigskip
+}
+\cventry{2015}{Ordinateur Personnel}{}{}{}{\small Automatisation de l'installation et de la configuration de mes ordinateurs avec Ansible}
 
 \section{Centres d'intérêt}
 \cvline{Informatique}{Logiciels libres, programmation fonctionnelle.}
 \cvline{Loisirs}{Salsa et autres danses, Veille technologique, photographie.}
-\cvline{Voyages}{17 ans à Libreville (Gabon), Road trips en Europe (10 pays), 4 mois en Inde.}
+\cvline{Voyages}{17 ans à Libreville (Gabon), Road trips en Europe (11 pays), 4 mois en Inde.}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
