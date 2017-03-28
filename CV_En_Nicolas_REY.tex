@@ -68,7 +68,9 @@
   \end{itemize}
   \bigskip
 }
-\cventry{2008 - 2012}{École Centrale de Nantes}{Generalist engineering school}{}{}{Specialized in information technology}
+\cventry{2008 - 2012}{École Centrale de Nantes - Software engineering specialization}{Generalist engineering school}{}{}{
+  The \textit{École Centrale de Nantes} is a well known French engineering school recognized by the \textit{Ordre des ingénieurs du Québec}. The degree delivered is equivalent to a \textit{4 years specialized Baccalaureat} in Quebec.
+}
 
 \vspace{0.5cm}
 \section{Languages}
@@ -96,83 +98,98 @@
 \newpage
 \section{Experiences}
 % \cventry{}{}{}{}{}{}
-\cventry{2012 - 2016\\3,5 ans}{Software engineer Scala/Java}{Lateral Thoughts}{Paris}{}{
-  \small Development services \\
+\cventry{2012 - 2017\\4,5 ans}{Scala/Java Software Engineer - Big Data}{Lateral Thoughts}{Paris}{}{
+  \small Development services. I have been working there since I finished my studies.
+  \medskip
+  \begin{itemize}
+    \item Self organized development services company, with no chief nor hierarchy
+    \item The running and development of the company is handled by every employee
+    \item Total freedom of the employees
+    \item High sense of responsabilities
+  \end{itemize}
+  \medskip
   \textbf{Environment :} \textit{\textbf{Scala}, Java, \textbf{Spark}}
   \bigskip
 }
-\cventry{2016 - 2017\\7 mois}{Software engineer Scala - Big Data}{Pages Jaunes}{Paris}{}{
+\cventry{2016 - 2017\\7 mois}{Scala Software Engineer - Big Data}{Pages Jaunes}{Paris}{}{
   \small Redesign the applications regarding audience data of Pages Jaunes with Spark
   \medskip
   \begin{itemize}
     \item Development of several applications to ingest and valorize data
     \item Building the software factory (Jenkins, Sonatype Nexus)
-    \item DevOps : managing the install (Ansible) and runtime of the app
-    \item Training the team to Scala, Spark, and Agile methods
+    \item DevOps : deployment  with Ansible, pipeline of jobs with Jenkins
+    \item Training the team to Scala, Spark, and to work with Agile methods
   \end{itemize}
   \medskip
   \textbf{Environment :} \textit{\textbf{Scala}, \textbf{Spark}, HDFS, Cloudera, Avro, Parquet} \\
-  \textbf{Project management :} \textit{Agile methods}
+  \textbf{Project management :} \textit{Agile methods} \\
+  \textbf{Company :} \textit{Pages Jaunes is a search engine of professionals. About 5 millions daily users.}
   \bigskip
 }
-\cventry{2015 - 2016\\10 mois}{Software engineer Scala - Big Data - SMACK}{Carrefour}{Paris}{}{
-  \small Development of the big data platform of Carrefour, a major big distribution company
+\cventry{2015 - 2016\\10 mois}{Scala Software Engineer - Big Data}{Carrefour}{Paris}{}{
+  \small Development of the real time data lake for Carrefour
   \medskip
   \begin{itemize}
-    \item Développement of the real time data lake : data ingestion and enrichment
-    \item Développement of the API to access those data
+    \item Ingestion in Kafka of multiple data sources
+    \item Computing the data with Spark Streaming
+    \item Normalizing the data in avro format
+    \item Storage of the data in HDFS and Cassandra
+    \item Development of APIs with Spray to access the data
+    \item The platform was splitted between a Mesos cluster and a Cloudera cluster
   \end{itemize}
   \medskip
   \textbf{Environment :} \textit{\textbf{Scala}, \textbf{Spark}, Mesos, Akka, Cassandra, Kafka, HDFS, Cloudera, Spray, Avro} \\
+  \textbf{Company :} \textit{Carrefour is a major big distribution company. 5600 retail stores in France.}
+  \bigskip
 }
-\cventry{2014 - 2015\\1 an}{Software engineer Scala/Java}{Vidal}{Paris}{}{
-	\small Développement d'APIs REST HATEOAS
+\cventry{2014 - 2015\\1 an}{Scala/Java Software Engineer}{Vidal}{Paris}{}{
+	\small Software development for the medical drug industry
 	\medskip
   \begin{itemize}
-    \item Exposition et implémentation des régles métier sur des données médicales
-    \item Développement d'un projet de tests BDD Cucumber sur les APIs Vidal
+    \item Development of a tool in Scala and Akka to manage updates of a heavy client
+    \item Development of HATEOAS RESTful APIs on a medical database
+    \item Development of a BDD testing project with Cucumber
   \end{itemize}
   \medskip
-  \textbf{Environment :} \textit{Java, Guava, Spring, Hibernate, Cucumber, Github, Docker, Ansible, Vagrant} \\
+  \textbf{Environment :} \textit{Scala, Java, Akka, Guava, Spring, Hibernate, Cucumber, Github, Docker} \\
+  \textbf{Gestion de projet :} \textit{Agile methods / Scrum} \\
+  \textbf{Company :} \textit{Vidal is the French leader of medical drug data.}
+  \bigskip
+}
+\cventry{2014\\9 mois}{Java Software Engineer}{SACEM}{Paris}{}{
+	\small Redesign of several declaration and payment web sites
+	\medskip
+  \begin{itemize}
+    \item Backend development in Java and Spring. Heavy use of Guava.
+    \item Frontend development in JavaScript and ReactJS
+    \item Interface testing with Fluentlenium
+    \item Development of a tool with RabbitMQ in order to handle the underlying database unavailability
+    \item Use of Git and Jenkins for code management
+  \end{itemize}
+  \medskip
+  \textbf{Backend Environment :} \textit{Java, Guava, Spring, Fluentlenium} \\
+  \textbf{Frontend Environment :} \textit{JavaScript, ReactJS} \\
+  \textbf{Gestion de projet :} \textit{Agile methods / Scrum} \\
+  \textbf{Company :} \textit{SACEM is the company in charge of collecting and redistributing music copyrights in France.}
+  \bigskip
+}
+\cventry{2013\\7 mois}{Scala Software Engineer}{FONTYOU}{Paris}{}{
+	\small Development of a web application dealing with font co-creation
+	\medskip
+  \begin{itemize}
+    \item Development of the APIs with Scala, Play2!, MongoDB
+    \item Development of the frontend with JavaScript, BackboneJS, CSS3
+    \item System administration of the software factory and the production environment
+    \item Development of a proof of concept for vectorial drawing inside a browser
+  \end{itemize}
+  \medskip
+  \textbf{Backend Environment :} \textit{\textbf{Scala}, Play2!, MongoDB, Zabbix} \\
+  \textbf{Frontend Environment :} \textit{JavaScript, BackboneJS, RequireJS, HTML5/CSS3, LessCSS} \\
   \textbf{Gestion de projet :} \textit{Agile / Scrum} \\
-  \\
-	\small Développement d'un outil de pilotage de mises à jour d'un client lourd
-	\medskip
-  \begin{itemize}
-    \item Machine à état développée en Akka
-  \end{itemize}
-  \medskip
-  \textbf{Environment :} \textit{\textbf{Scala}, Akka, Github}
+  \textbf{Company :} \textit{Fontyou is a startup which at the time was working on a social network of font co-creation.}
   \bigskip
 }
-\cventry{2014\\9 mois}{Software engineer Java}{SACEM}{Paris}{}{
-	\small Refonte des sites de déclaration, de paiement, et institutionnels
-	\medskip
-  \begin{itemize}
-    \item Développement backend et frontend
-    \item Développement d'un tampon avec RabbitMQ masquant l'indisponibilité du SI interne
-  \end{itemize}
-  \medskip
-  \textbf{Environment Backend :} \textit{Java, Guava, Spring Core, Spring MVC, Fluentlenium} \\
-  \textbf{Environment Frontend :} \textit{JavaScript, ReactJS, Browserify, Gulp} \\
-  \textbf{Gestion de projet :} \textit{Agile / Scrum}
-  \bigskip
-}
-\cventry{2013\\7 mois}{Software engineer Scala}{FONTYOU}{Paris}{}{
-	\small Développement d'une web app de co-création de polices pour une satrtup
-	\medskip
-  \begin{itemize}
-    \item Développement des API en Scala, Play2!, MongoDB
-    \item Développement du front en JavaScript / BackboneJS, intégration HTML5/CSS3
-    \item Administration système, gestion de l'usine logicielle et de la prod
-    \item Développement d'un POC d'un logiciel de dessin vectoriel dans le navigateur
-  \end{itemize}
-  \medskip
-  \textbf{Environment Backend :} \textit{\textbf{Scala}, Play2!, MongoDB, Zabbix} \\
-  \textbf{Environment Frontend :} \textit{JavaScript, BackboneJS, RequireJS, HTML5/CSS3, LessCSS} \\
-  \textbf{Gestion de projet :} \textit{Agile / Scrum}
-  \bigskip
-}
+\cventry{}{References on demand}{}{}{}{}
 % \cventry{2012 - 2013\\7 mois}{Ingénieur Développeur Scala}{Vidal}{Paris}{}{
 % 	\small Développement d'un client lourd
 % 	\medskip
@@ -204,14 +221,29 @@
 
 
 \newpage
-\section{Projets personnels}
-\cventry{2015}{Serveur Personnel}{}{}{\small Installation d'un serveur avec Ansible}{\textit{Ansible, Nginx, OwnCloud, GitLab, Linux Debian}}
-\cventry{2015}{Ordinateur Personnel}{}{}{\small Automatisation de l'installation et de la configuration de mes ordinateurs avec Ansible}{}
+\section{Personal projects}
+\cventry{2017}{HDFS Compactor}{In progress...}{}{}{
+  \small Tool aiming at gathering small files into bigger ones in order to minimize the number of HDFS blocks and to optimize the reading of data. Supported formats : Parquet, Avro, CSV compressed in GZip.
+  \bigskip
+}
+\cventry{2017}{Docker image for TaigaIO}{In progress...}{}{}{
+  \small Creation of a Docker image for the \textit{taiga.io} software. TaigaIO is a simplified tool for task management oriented to Agile methods.
+  \bigskip
+}
+\cventry{2015}{Personal Server}{}{}{}{
+  \small Installation of a development server with Ansible \\
+  \textit{Ansible, Nginx, OwnCloud, GitLab, Linux Debian}
+  \bigskip
+}
+\cventry{2015}{Personal Computer}{}{}{}{
+  \small Automation of the install and configuration of my own personal computers with Ansible
+}
 
-\section{Centres d'intérêt}
-\cvline{Informatique}{Logiciels libres, programmation fonctionnelle.}
-\cvline{Loisirs}{Salsa et autres danses, Veille technologique, photographie.}
-\cvline{Voyages}{17 ans à Libreville (Gabon), Road trips en Europe (10 pays), 4 mois en Inde.}
+\vspace{0.5cm}
+\section{Interests}
+\cvline{IT}{Free and open source softwares, functionnal programming.}
+\cvline{Hobbies}{Salsa and other danses, Tech watch, Photography.}
+\cvline{Travels}{17 years in Libreville (Gabon), Road trips in Europe (11 countries), 4 months in India.}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
